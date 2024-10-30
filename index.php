@@ -38,6 +38,44 @@ echo '<br>';
 $length_of_string = 'Десять негритят пошли купаться в море';
 var_dump(mb_strlen($length_of_string, 'UTF-8'));
 
+echo '<br>';
 
+// Actions with logic operators
+
+$bool = true;
+$number = 1;
+var_dump($bool == $number);
+
+echo '<br>';
+
+$bool2 = false;
+$number2 = 0;
+var_dump($bool2 === $number2);
+
+echo '<br>';
+
+$string1 = 'three';
+$string2 = 'три';
+
+if ($string1 > $string2){
+  echo $string1 . ' is greater than ' . $string2;
+} elseif ($string1 < $string2){
+  echo $string1 . ' is less than ' . $string2;
+} else {
+  echo $string1 . ' and ' . $string2 . ' are equal';
+}
+
+echo '<br>';
+
+$number3 = 125 * 13 + 7;
+$number4 = 223 + 28 * 2;
+
+if ($number3 > $number4){
+  var_dump($number3 . ' is greater than ' . $number4);
+} elseif ($number3 < $number4){
+  var_dump($number3 . ' is less than ' . $number4);
+} else {
+  var_dump($number3 . ' and ' . $number4 . ' are equal');
+}
 
 ?>
